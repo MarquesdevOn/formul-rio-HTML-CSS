@@ -96,14 +96,7 @@ p {
     
 }
 
-textarea label{
-    left: 0;
-    transition: 0.2s;
-    font-size: 16px;
+#sugestao-box{
+    transition: all 0.2s;
+    cursor: text;
 }
-
-.input-single textarea{
-    padding: 5px 0 5px 10px;
-}
-
-
