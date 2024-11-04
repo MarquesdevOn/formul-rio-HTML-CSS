@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/img01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* centralizar o container do formulario*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto; /* o container todo esta centralizado*/
+}
+
+form{
+    background-color: antiquewhite;
+    max-width: 900px;
+    height: 550px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* colocar o titulo e paragrafo no centro*/
+
+form h1 {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+form p {
+    text-align: center;
+    margin: 15px 0 ; /* separar do titulo emcima e embaixo*/
+
+}
+
+.input-single{
+    position: relative;
+    margin: 30px 0 ;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.inupt{
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid black;
+    padding: 8px;
+    font-size: 30px;
+    outline: 0;
+}
+
+/* animar os labls*/
+
+form .input-single .inupt:focus ~ label,
+form .input-single .inupt:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: black;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+
+form input[type=submit]{
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: antiquewhite;
+
+}
+
+p {
+    white-space: pre-wrap; /* Preserva quebras de linha e espaços extras */
+    
+}
+
+textarea label{
+    left: 0;
+    transition: 0.2s;
+    font-size: 16px;
+}
+
+.input-single textarea{
+    padding: 5px 0 5px 10px;
+}
+
+
